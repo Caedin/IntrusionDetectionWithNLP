@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     Dataset1-weka.filters.unsupervised.attribute.StringToWordVector-R1-W10000-prune-rate-1.0-C-N0-L-stemmerweka.core.stemmers.IteratedLovinsStemmer-stopwords-handlerweka.core.stopwords.Rainbow-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer
+Instances:    1098
+Attributes:   3322
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+
+Time taken to build model: 4.91 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1007               91.7122 %
+Incorrectly Classified Instances        91                8.2878 %
+Kappa statistic                          0.3862
+Mean absolute error                      0.0829
+Root mean squared error                  0.2879
+Relative absolute error                 49.8557 %
+Root relative squared error            100.0587 %
+Coverage of cases (0.95 level)          91.7122 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances             1098     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.660    0.936      0.975    0.955      0.402    0.657     0.936      caedin8
+                 0.340    0.025    0.576      0.340    0.428      0.402    0.657     0.256      supercub
+Weighted Avg.    0.917    0.602    0.904      0.917    0.907      0.402    0.657     0.874     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 973  25 |   a =  caedin8
+  66  34 |   b =  supercub

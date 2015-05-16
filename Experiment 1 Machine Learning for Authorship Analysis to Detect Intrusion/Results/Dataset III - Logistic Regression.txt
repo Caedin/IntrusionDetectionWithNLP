@@ -1,0 +1,227 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1
+Relation:     Dataset1-weka.filters.unsupervised.attribute.StringToWordVector-R1-W10000-prune-rate-1.0-C-N0-L-stemmerweka.core.stemmers.IteratedLovinsStemmer-stopwords-handlerweka.core.stopwords.Rainbow-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer-weka.filters.unsupervised.attribute.ClassAssigner-Clast-weka.filters.unsupervised.attribute.ClassAssigner-Cfirst-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 8 -E 16-Sweka.attributeSelection.GreedyStepwise -T 0.0 -N -1 -num-slots 16
+Instances:    1098
+Attributes:   59
+              ar
+              fin
+              job
+              post
+              pr
+              program
+              reddit
+              tru
+              wa
+              whil
+              year
+              adult
+              anc
+              anderson
+              background
+              backpack
+              basketb
+              betch
+              birdem
+              bizar
+              boulder
+              brad
+              bzzzzzzzzzzz
+              cameron
+              chip
+              cinem
+              cok
+              doghol
+              entour
+              feelin
+              flamethrower
+              glanc
+              glov
+              goddamnit
+              horizont
+              hostel
+              iimgurcom
+              illus
+              kerm
+              kh
+              la
+              layout
+              lift
+              limbaugh
+              luk
+              museum
+              nut
+              philosoph
+              punch
+              roast
+              shitpost
+              showoff
+              teaspoon
+              trademark
+              ultron
+              victim
+              welp
+              ya
+               class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                               Class
+Variable                     caedin8
+====================================
+ar                            2.7614
+fin                          12.3267
+job                          14.6927
+post                         -2.2465
+pr                           27.2629
+program                      14.2823
+reddit                       -6.0878
+tru                          24.3907
+wa                           -0.6431
+whil                         20.3516
+year                          0.9093
+adult                       -49.6496
+anc                         -49.6496
+anderson                    -29.8115
+background                  -49.6496
+backpack                    -49.6496
+basketb                     -49.6496
+betch                       -49.6496
+birdem                      -49.6496
+bizar                       -49.6496
+boulder                     -49.6496
+brad                        -49.6496
+bzzzzzzzzzzz                -49.6496
+cameron                      -7.0928
+chip                        -49.6496
+cinem                       -49.6496
+cok                         -49.6496
+doghol                      -49.6496
+entour                      -49.6496
+feelin                      -49.6496
+flamethrower                -49.6496
+glanc                       -49.6496
+glov                        -49.6496
+goddamnit                   -49.6496
+horizont                    -49.6496
+hostel                      -49.6496
+iimgurcom                   -41.0942
+illus                       -49.6496
+kerm                        -49.6496
+kh                          -49.6496
+la                          -49.6496
+layout                      -49.6496
+lift                        -49.6496
+limbaugh                    -49.6496
+luk                         -49.6496
+museum                      -49.6496
+nut                         -49.6496
+philosoph                   -49.6496
+punch                       -49.6496
+roast                       -49.6496
+shitpost                    -49.6496
+showoff                     -49.6496
+teaspoon                    -49.6949
+trademark                   -49.6496
+ultron                      -49.6496
+victim                      -49.6496
+welp                        -49.6949
+ya                          -49.6949
+Intercept                     3.8554
+
+
+Odds Ratios...
+                               Class
+Variable                     caedin8
+====================================
+ar                           15.8223
+fin                      225641.4594
+job                     2404197.1037
+post                          0.1058
+pr              6.920248074741201E11
+program                 1594837.4114
+reddit                        0.0023
+tru             3.915185945728054E10
+wa                            0.5257
+whil                  689601200.6904
+year                          2.4825
+adult                              0
+anc                                0
+anderson                           0
+background                         0
+backpack                           0
+basketb                            0
+betch                              0
+birdem                             0
+bizar                              0
+boulder                            0
+brad                               0
+bzzzzzzzzzzz                       0
+cameron                       0.0008
+chip                               0
+cinem                              0
+cok                                0
+doghol                             0
+entour                             0
+feelin                             0
+flamethrower                       0
+glanc                              0
+glov                               0
+goddamnit                          0
+horizont                           0
+hostel                             0
+iimgurcom                          0
+illus                              0
+kerm                               0
+kh                                 0
+la                                 0
+layout                             0
+lift                               0
+limbaugh                           0
+luk                                0
+museum                             0
+nut                                0
+philosoph                          0
+punch                              0
+roast                              0
+shitpost                           0
+showoff                            0
+teaspoon                           0
+trademark                          0
+ultron                             0
+victim                             0
+welp                               0
+ya                                 0
+
+
+Time taken to build model: 0.28 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1037               94.4444 %
+Incorrectly Classified Instances        61                5.5556 %
+Kappa statistic                          0.5487
+Mean absolute error                      0.0693
+Root mean squared error                  0.232 
+Relative absolute error                 41.7043 %
+Root relative squared error             80.6236 %
+Coverage of cases (0.95 level)          94.8087 %
+Mean rel. region size (0.95 level)      51.5938 %
+Total Number of Instances             1098     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.998    0.590    0.944      0.998    0.970      0.605    0.820     0.974      caedin8
+                 0.410    0.002    0.953      0.410    0.573      0.605    0.820     0.555      supercub
+Weighted Avg.    0.944    0.536    0.945      0.944    0.934      0.605    0.820     0.936     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 996   2 |   a =  caedin8
+  59  41 |   b =  supercub

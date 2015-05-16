@@ -1,0 +1,41 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.VotedPerceptron -I 10 -E 1.0 -S 1 -M 10000
+Relation:     Dataset1-weka.filters.unsupervised.attribute.StringToWordVector-R1-W10000-prune-rate-1.0-C-N0-L-stemmerweka.core.stemmers.IteratedLovinsStemmer-stopwords-handlerweka.core.stopwords.Rainbow-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer-weka.filters.unsupervised.attribute.ClassAssigner-Cfirst-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.SignificanceAttributeEval-Sweka.attributeSelection.Ranker -T 0.0 -N -1
+Instances:    1098
+Attributes:   324
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+VotedPerceptron: Number of perceptrons=369
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1035               94.2623 %
+Incorrectly Classified Instances        63                5.7377 %
+Kappa statistic                          0.5395
+Mean absolute error                      0.0574
+Root mean squared error                  0.2395
+Relative absolute error                 34.5155 %
+Root relative squared error             83.2538 %
+Coverage of cases (0.95 level)          94.2623 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances             1098     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.996    0.590    0.944      0.996    0.969      0.589    0.703     0.944      caedin8
+                 0.410    0.004    0.911      0.410    0.566      0.589    0.703     0.427      supercub
+Weighted Avg.    0.943    0.537    0.941      0.943    0.933      0.589    0.703     0.897     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 994   4 |   a =  caedin8
+  59  41 |   b =  supercub
